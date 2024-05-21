@@ -46,7 +46,7 @@ for:
 -
   matrix:
     only:
-    - image: macOS
+    - image: iOS
 
   after_build:
   - tar -czvf counter-macos.tar.gz -C dist counter.app
