@@ -1,6 +1,6 @@
 image:
 - Visual Studio 2019
-- iOS
+- macOS
 - Ubuntu
 
 skip_branch_with_pr: true
@@ -46,7 +46,7 @@ for:
 -
   matrix:
     only:
-    - image: iOS
+    - image: macOS
 
   after_build:
   - tar -czvf counter-macos.tar.gz -C dist counter.app
@@ -67,3 +67,4 @@ for:
 
   artifacts:
   - path: counter-linux.tar.gz
+
